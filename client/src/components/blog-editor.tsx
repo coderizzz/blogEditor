@@ -5,7 +5,6 @@ import { Card } from "@/components/ui/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
-import { Spinner } from "@/components/ui/spinner";
 import { useAutoSave } from "@/hooks/use-auto-save";
 import { useToast } from "@/hooks/use-toast";
 
@@ -215,14 +214,7 @@ export default function BlogEditor({
                 onClick={handleSaveDraft}
                 disabled={isSaving}
               >
-                {isSaving ? (
-                  <>
-                    <Spinner className="mr-2 h-4 w-4" />
-                    Saving...
-                  </>
-                ) : (
-                  "Save as Draft"
-                )}
+                {isSaving ? "Saving..." : "Save as Draft"}
               </Button>
               <Button
                 type="button" 
@@ -230,14 +222,7 @@ export default function BlogEditor({
                 onClick={handlePublish}
                 disabled={isPublishing}
               >
-                {isPublishing ? (
-                  <>
-                    <Spinner className="mr-2 h-4 w-4" />
-                    Publishing...
-                  </>
-                ) : (
-                  "Publish"
-                )}
+                {isPublishing ? "Publishing..." : "Publish"}
               </Button>
             </div>
           </div>
