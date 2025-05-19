@@ -107,7 +107,7 @@ export default function BlogEditor({
   };
 
   return (
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-6xl mx-auto fade-in">
       <div className="flex flex-col lg:flex-row gap-6">
         {/* Editor Column */}
         <div className="flex-grow lg:w-3/5">

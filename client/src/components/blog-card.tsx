@@ -44,7 +44,7 @@ export default function BlogCard({ blog, compact = false }: BlogCardProps) {
   const timeAgo = blog.updated_at ? formatDistanceToNow(new Date(blog.updated_at), { addSuffix: true }) : "";
   
   return (
-    <div className="rounded-lg border border-muted/30 overflow-hidden bg-secondary/20 hover:bg-secondary/30 transition">
+    <div className="rounded-lg border border-muted/30 overflow-hidden bg-secondary/20 hover:bg-secondary/30 transition blog-card-hover fade-in">
       <div className="p-4">
         <div className="flex justify-between items-start mb-2">
           <h3 className="font-serif font-medium text-foreground">

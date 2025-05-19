@@ -27,13 +27,13 @@ export default function HomePage() {
 
   return (
     <div className="max-w-6xl mx-auto">
-      <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">Welcome to Moody</h1>
+      <div className="text-center mb-16 fade-in">
+        <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6 soft-pulse">Welcome to Moody</h1>
         <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
           An aesthetic blog editor for your deepest thoughts and creative expressions. 
           Write, save drafts, and publish your content with elegance.
         </p>
-        <Button asChild className="bg-accent hover:bg-accent/90 text-white">
+        <Button asChild className="bg-accent hover:bg-accent/90 text-white gentle-float">
           <Link href="/editor">Create New Blog</Link>
         </Button>
       </div>

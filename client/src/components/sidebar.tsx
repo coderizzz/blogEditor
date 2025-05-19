@@ -47,56 +47,48 @@ export default function Sidebar() {
             <h2 className="font-serif text-sm uppercase tracking-wider text-foreground/70 mb-3">Menu</h2>
             <ul className="space-y-2">
               <li>
-                <Link href="/editor">
-                  <a className={cn(
-                    "flex items-center px-4 py-2 rounded transition hover:bg-accent/10",
-                    location === "/editor" && "bg-accent/20 text-accent"
-                  )}>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-                    </svg>
-                    Editor
-                  </a>
+                <Link href="/editor" className={cn(
+                  "flex items-center px-4 py-2 rounded transition hover:bg-accent/10",
+                  location === "/editor" && "bg-accent/20 text-accent"
+                )}>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                  </svg>
+                  Editor
                 </Link>
               </li>
               <li>
-                <Link href="/blogs">
-                  <a className={cn(
-                    "flex items-center px-4 py-2 rounded transition hover:bg-accent/10",
-                    (location === "/blogs" || location.startsWith("/blogs/")) && "bg-accent/20 text-accent"
-                  )}>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                    </svg>
-                    All Blogs
-                  </a>
+                <Link href="/blogs" className={cn(
+                  "flex items-center px-4 py-2 rounded transition hover:bg-accent/10",
+                  (location === "/blogs" || location.startsWith("/blogs/")) && "bg-accent/20 text-accent"
+                )}>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                  </svg>
+                  All Blogs
                 </Link>
               </li>
               <li>
-                <Link href="/blogs/draft">
-                  <a className={cn(
-                    "flex items-center px-4 py-2 rounded transition hover:bg-accent/10",
-                    location === "/blogs/draft" && "bg-accent/20 text-accent"
-                  )}>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
-                    </svg>
-                    Drafts
-                  </a>
+                <Link href="/blogs/draft" className={cn(
+                  "flex items-center px-4 py-2 rounded transition hover:bg-accent/10",
+                  location === "/blogs/draft" && "bg-accent/20 text-accent"
+                )}>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                  </svg>
+                  Drafts
                 </Link>
               </li>
               <li>
-                <Link href="/blogs/published">
-                  <a className={cn(
-                    "flex items-center px-4 py-2 rounded transition hover:bg-accent/10",
-                    location === "/blogs/published" && "bg-accent/20 text-accent"
-                  )}>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                    </svg>
-                    Published
-                  </a>
+                <Link href="/blogs/published" className={cn(
+                  "flex items-center px-4 py-2 rounded transition hover:bg-accent/10",
+                  location === "/blogs/published" && "bg-accent/20 text-accent"
+                )}>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  </svg>
+                  Published
                 </Link>
               </li>
             </ul>
@@ -108,10 +100,8 @@ export default function Sidebar() {
               <ul className="space-y-2">
                 {recentDrafts.map(draft => (
                   <li key={draft.id}>
-                    <Link href={`/editor/${draft.id}`}>
-                      <a className="block px-4 py-2 text-sm truncate hover:bg-accent/10 rounded">
-                        {draft.title || "Untitled"}
-                      </a>
+                    <Link href={`/editor/${draft.id}`} className="block px-4 py-2 text-sm truncate hover:bg-accent/10 rounded">
+                      {draft.title || "Untitled"}
                     </Link>
                   </li>
                 ))}
