@@ -1,6 +1,6 @@
 # Moody - Aesthetic Blog Editor
 
-A moody, aesthetic blog editor with auto-save functionality inspired by Lana Del Rey/Cigarettes After Sex style. This project allows users to write, edit, save, and publish blogs with an elegant, dark-themed interface.
+A moody, aesthetic blog editor with auto-save functionality. This project allows users to write, edit, save, and publish blogs with an elegant, dark-themed interface.
 
 ![Moody Blog Editor Screenshot](./generated-icon.png)
 
@@ -103,5 +103,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Acknowledgments
 
-- Design inspired by Lana Del Rey and Cigarettes After Sex aesthetic
 - Built for a full-stack developer internship assignment
